@@ -1,6 +1,4 @@
-
 import requests
-
 from bs4 import BeautifulSoup
 
 #url = 'https://realpython.github.io/fake-jobs/'
@@ -18,8 +16,7 @@ import requests
 from bs4 import BeautifulSoup
 import csv
 # Make a request
-page = requests.get(
-    "https://codedamn-classrooms.github.io/webscraper-python-codedamn-classroom-website/")
+page = requests.get("https://codedamn-classrooms.github.io/webscraper-python-codedamn-classroom-website/")
 soup = BeautifulSoup(page.content, 'html.parser')
 
 # Create top_items as empty list
